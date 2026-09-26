@@ -190,6 +190,36 @@ footer nav{display:flex;gap:20px}
 footer a{color:var(--muted);text-decoration:none}
 footer a:hover{color:var(--ink)}
 
+/* centred top area */
+.hero .wrap > div:first-child{text-align:center;display:flex;flex-direction:column;align-items:center}
+.hero .lede{margin-inline:auto}
+.hero .ctas{justify-content:center}
+.promise .wrap{grid-template-columns:repeat(4,auto);justify-content:center;column-gap:36px;text-align:center;font-size:12.5px}
+.promise span{white-space:nowrap}
+@media (max-width:1100px){.promise .wrap{grid-template-columns:auto auto}}
+@media (max-width:860px){.promise .wrap{grid-template-columns:1fr 1fr;justify-items:center}}
+@media (max-width:480px){.promise .wrap{grid-template-columns:1fr}}
+.story .wrap{grid-template-columns:1fr;gap:32px;text-align:center;justify-items:center}
+.story blockquote{max-width:30ch}
+.story .body-copy{margin-inline:auto;max-width:62ch}
+
+/* phone: swipeable rows */
+.swipe{display:none}
+@media (max-width:860px){
+  .swipe{display:block;text-align:center;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin:32px 0 -28px}
+  .walk,.walk.three{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:20px;margin-inline:-20px;padding:0 20px 14px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .walk::-webkit-scrollbar{display:none}
+  .walk .step,.walk.three .step:last-child{flex:0 0 76%;scroll-snap-align:center;grid-column:auto}
+  .walk .step .device{width:100%}
+  .walk:not(.three)::before,.walk:not(.three)::after{display:none}
+  .step .num{letter-spacing:.06em}
+  .step .cap h3{font-size:18px}.step .cap p{font-size:15px}
+  .pair{justify-content:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:-20px;padding:0 20px 14px;gap:20px;scrollbar-width:none}
+  .pair::-webkit-scrollbar{display:none}
+  .pair .shot{flex:0 0 72%;scroll-snap-align:center}
+  .pair .shot:nth-child(2){margin-top:0}
+}
+
 .device{position:relative;width:100%;max-width:100%;padding:3.4%;border-radius:15%/7%;background:linear-gradient(145deg,#4a4b50,#1d1d20 40%,#2c2d31);box-shadow:inset 0 0 0 1.5px #5c5d62,inset 0 0 0 5px #111,0 30px 60px -25px rgba(0,0,0,.8)}
 .device::before,.device::after{content:"";position:absolute;width:1.4%;border-radius:2px;background:#3a3b3f}
 .device::before{left:-1.1%;top:19%;height:7%;box-shadow:0 180% 0 #3a3b3f,0 360% 0 #3a3b3f}
@@ -662,6 +692,7 @@ footer a:hover{color:var(--ink)}
       <h2>From the back garden to the Sky Feed in three steps.</h2>
       <p>Tap the +Post button and you’re away. Write as much or as little as you like, add a single photo or a whole set from one session, and pick the category it belongs in. Change your mind later? Every post can be edited or deleted. No typo lives forever.</p>
     </div>
+    <p class="swipe">Swipe to see each step <span aria-hidden="true">→</span></p>
     <div class="walk three">
       <div class="step"><div class="device" role="img" aria-label="Create post screen with the category menu open: Deep Sky, Planetary, Lunar, Solar, ISS, Rockets, Miscellaneous"><div class="scr"><div class="di"></div><div class="app"><div class="sb"><span>9:41</span><span class="sbr"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0zM3.6 7a6.3 6.3 0 0 1 8.8 0l1.4-1.4a8.3 8.3 0 0 0-11.6 0zM0.9 4.3a10.2 10.2 0 0 1 14.2 0L16 3.2A11.6 11.6 0 0 0 0 3.2z"/></svg><svg viewBox="0 0 27 13"><rect x=".5" y=".5" width="23" height="12" rx="3.5" fill="none" stroke="currentColor" opacity=".45"/><rect x="2.2" y="2.2" width="17.5" height="8.6" rx="2"/><path d="M25 4.3v4.4a2.3 2.3 0 0 0 0-4.4z" opacity=".45"/></svg></span></div><div class="top"><span class="logo"><svg class="lg" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lgA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b7cf6"/><stop offset="1" stop-color="#3fd6d0"/></linearGradient><radialGradient id="lgB" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#55e8df"/><stop offset="1" stop-color="#7c6cf0"/></radialGradient></defs><circle cx="20" cy="20" r="17" fill="none" stroke="url(#lgA)" stroke-width="2.6"/><circle cx="20" cy="20" r="11.5" fill="none" stroke="url(#lgA)" stroke-width="1.8"/><circle cx="20" cy="20" r="5.2" fill="url(#lgB)"/></svg><img class="wm" src="img/app/wordmark.png" alt=""></span><span class="back"><i class="mi " aria-hidden="true">chevron_left</i>back</span></div><div class="cphead"><img class="cpav" src="img/app/av_scope.webp" alt=""><div><b>OrionOwen</b><small>Share your universe!</small></div></div><div class="dv dvcp"><span></span></div><div class="cpf" style="top:calc(262*var(--p))">
 <label>Deep Sky? Planetary? Solar? Lunar?...</label>
@@ -728,6 +759,7 @@ footer a:hover{color:var(--ink)}
       <p>No other social app has anything like this, because no other social app was built for people who own seven eyepieces and can tell you the focal length of each one. Add everything you own from a proper catalogue of real astronomy gear, organised by brand and model.</p>
     </div>
     <div class="chips"><span><b>Telescopes</b> refractors, reflectors, Dobsonians, SCTs</span><span><b>Cameras</b> astro cams, DSLRs, planetary, guide</span><span><b>Eyepieces</b> every focal length</span><span><b>Mounts</b> EQ, alt-az, tracking, GoTo</span><span><b>Filters</b> LP, narrowband, solar, colour</span><span><b>Barlows &amp; reducers</b></span><span><b>Accessories</b> finders, focusers, dew heaters</span></div>
+    <p class="swipe">Swipe to see each step <span aria-hidden="true">→</span></p>
     <div class="walk three">
       <div class="step"><div class="device" role="img" aria-label="Telescope catalogue open with a search for sky-watcher and the Esprit 100ED ticked"><div class="scr"><div class="di"></div><div class="app"><div class="sb"><span>9:41</span><span class="sbr"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0zM3.6 7a6.3 6.3 0 0 1 8.8 0l1.4-1.4a8.3 8.3 0 0 0-11.6 0zM0.9 4.3a10.2 10.2 0 0 1 14.2 0L16 3.2A11.6 11.6 0 0 0 0 3.2z"/></svg><svg viewBox="0 0 27 13"><rect x=".5" y=".5" width="23" height="12" rx="3.5" fill="none" stroke="currentColor" opacity=".45"/><rect x="2.2" y="2.2" width="17.5" height="8.6" rx="2"/><path d="M25 4.3v4.4a2.3 2.3 0 0 0 0-4.4z" opacity=".45"/></svg></span></div><div class="top"><span class="logo"><svg class="lg" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lgA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b7cf6"/><stop offset="1" stop-color="#3fd6d0"/></linearGradient><radialGradient id="lgB" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#55e8df"/><stop offset="1" stop-color="#7c6cf0"/></radialGradient></defs><circle cx="20" cy="20" r="17" fill="none" stroke="url(#lgA)" stroke-width="2.6"/><circle cx="20" cy="20" r="11.5" fill="none" stroke="url(#lgA)" stroke-width="1.8"/><circle cx="20" cy="20" r="5.2" fill="url(#lgB)"/></svg><img class="wm" src="img/app/wordmark.png" alt=""></span><span class="back"><i class="mi " aria-hidden="true">chevron_left</i>back</span></div><div class="ttl">Manage Equipment</div><div class="dv dvc"><span></span></div>
 <div class="nav"><span class="ni"><i class="mi " aria-hidden="true">groups</i><b>My Squads</b></span><span class="ni"><i class="mi " aria-hidden="true">person</i><b>My Page</b></span><span class="ni"><i class="mi " aria-hidden="true">home</i><b>Home</b></span><span class="ni on"><i class="mi " aria-hidden="true">construction</i><b>Equip</b></span></div><div class="hbar"></div><div class="bigdd"><div class="bs">sky-watcher</div><ul><li><span class="cbx"></span>Sky-Watcher Esprit 80ED</li><li><span class="cbx on"><i class="mi " aria-hidden="true">check</i></span>Sky-Watcher Esprit 100ED</li><li><span class="cbx"></span>Sky-Watcher Esprit 120ED</li><li><span class="cbx"></span>Sky-Watcher Evostar 72ED</li><li><span class="cbx"></span>Sky-Watcher Evostar 80ED</li><li><span class="cbx"></span>Sky-Watcher Evostar 100ED</li><li><span class="cbx"></span>Sky-Watcher Evostar 120ED</li><li><span class="cbx"></span>Sky-Watcher Explorer 130P</li><li><span class="cbx"></span>Sky-Watcher Explorer 150P</li><li><span class="cbx"></span>Sky-Watcher Heritage 130P Flextube</li><li><span class="cbx"></span>Sky-Watcher Quattro 200P</li><li><span class="cbx"></span>Sky-Watcher Skyliner 200P</li><li><span class="cbx"></span>Sky-Watcher Skyliner 250PX</li><li><span class="cbx"></span>Sky-Watcher Skymax 127</li></ul></div></div></div></div>
@@ -760,6 +792,7 @@ footer a:hover{color:var(--ink)}
       <h2>Find your people. Astronomy has always been a club hobby.</h2>
       <p>A Squad is a group with its own name, picture, description and private feed. Think of it as a room inside AstroSphere where a particular crowd gathers.</p>
     </div>
+    <p class="swipe">Swipe to see each step <span aria-hidden="true">→</span></p>
     <div class="walk three">
       <div class="step"><div class="device" role="img" aria-label="Squads screen with a search box and a list of joined and pending squads"><div class="scr"><div class="di"></div><div class="app"><div class="sb"><span>9:41</span><span class="sbr"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0zM3.6 7a6.3 6.3 0 0 1 8.8 0l1.4-1.4a8.3 8.3 0 0 0-11.6 0zM0.9 4.3a10.2 10.2 0 0 1 14.2 0L16 3.2A11.6 11.6 0 0 0 0 3.2z"/></svg><svg viewBox="0 0 27 13"><rect x=".5" y=".5" width="23" height="12" rx="3.5" fill="none" stroke="currentColor" opacity=".45"/><rect x="2.2" y="2.2" width="17.5" height="8.6" rx="2"/><path d="M25 4.3v4.4a2.3 2.3 0 0 0 0-4.4z" opacity=".45"/></svg></span></div><div class="top"><span class="logo"><svg class="lg" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lgA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b7cf6"/><stop offset="1" stop-color="#3fd6d0"/></linearGradient><radialGradient id="lgB" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#55e8df"/><stop offset="1" stop-color="#7c6cf0"/></radialGradient></defs><circle cx="20" cy="20" r="17" fill="none" stroke="url(#lgA)" stroke-width="2.6"/><circle cx="20" cy="20" r="11.5" fill="none" stroke="url(#lgA)" stroke-width="1.8"/><circle cx="20" cy="20" r="5.2" fill="url(#lgB)"/></svg><img class="wm" src="img/app/wordmark.png" alt=""></span><span class="back"><i class="mi " aria-hidden="true">chevron_left</i>back</span></div><div class="ttl">Squads</div><div class="cnt">5</div><div class="dv dvc"><span></span></div>
 <div class="srch"><i class="mi " aria-hidden="true">search</i><span>Search all squads...</span></div><span class="tb csq">Create a Squad</span>
