@@ -247,6 +247,12 @@ footer .wrap{flex-direction:column;justify-content:center;text-align:center}
 .appbadge .fb small{font-size:11px;font-weight:400;letter-spacing:.02em}
 .ctas{align-items:center}
 
+.advert{padding-block:72px 8px;text-align:center}
+.advert .label{margin-bottom:22px}
+.vidframe{width:min(360px,100%);margin-inline:auto;aspect-ratio:9/16;border-radius:28px;overflow:hidden;background:#000;border:1px solid rgba(139,92,246,.45);box-shadow:0 0 0 6px rgba(20,20,23,.9),0 0 0 7px rgba(85,232,223,.25),0 40px 90px -30px rgba(139,92,246,.6),0 0 120px -40px rgba(85,232,223,.55)}
+.vidframe video{display:block;width:100%;height:100%;object-fit:cover;background:#000}
+@media (max-width:480px){.vidframe{width:min(300px,100%)}}
+
 .device{position:relative;width:100%;max-width:100%;padding:3.4%;border-radius:15%/7%;background:linear-gradient(145deg,#4a4b50,#1d1d20 40%,#2c2d31);box-shadow:inset 0 0 0 1.5px #5c5d62,inset 0 0 0 5px #111,0 30px 60px -25px rgba(0,0,0,.8)}
 .device::before,.device::after{content:"";position:absolute;width:1.4%;border-radius:2px;background:#3a3b3f}
 .device::before{left:-1.1%;top:19%;height:7%;box-shadow:0 180% 0 #3a3b3f,0 360% 0 #3a3b3f}
@@ -619,7 +625,7 @@ footer .wrap{flex-direction:column;justify-content:center;text-align:center}
 <div class="who"><img class="pav2" src="img/app/av_galaxy.webp" alt=""><b>DobsonianDan</b><i class="mi kb" aria-hidden="true">more_vert</i></div>
 <div class="ptxt">Saturn from the back garden last night. First time I have caught the Cassini division this cleanly with the 10&quot; Dob.</div>
 <div class="meta"><span>Category: Planetary</span><span class="rt"><span>3 hours ago</span></span></div><div class="meta"><span>Telescope: Sky-Watcher Skyliner 250PX</span></div><div class="meta"><span>Camera: ZWO ASI224MC</span></div>
-<div class="acts"><span><i class="mi " aria-hidden="true">chat_bubble_outline</i>Comments 23</span><span class="lk"><i class="mi " aria-hidden="true">favorite</i>128</span></div></div><div class="card"><div class="car"><div class="pimg"><img src="img/app/p_jupiter.webp" alt=""></div></div>
+<div class="acts"><span><i class="mi " aria-hidden="true">chat_bubble_outline</i>Comments 23</span><span class="lk"><i class="mi " aria-hidden="true">favorite</i>128</span></div></div><div class="card"><div class="car"><div class="pimg"><img src="img/app/p_jupiter.webp" alt=""></div><div class="pimg peek"><img src="img/app/p_jupiter2.webp" alt=""></div></div>
 <div class="who"><img class="pav2" src="img/app/av_jupiter.webp" alt=""><b>JupiterJakob</b><i class="mi kb" aria-hidden="true">more_vert</i></div>
 <div class="ptxt">Great Red Spot rotating into view. 3,000 frame stack, best 15%.</div>
 <div class="meta"><span>Category: Planetary</span><span class="rt"><span>1 day ago</span></span></div><div class="meta"><span>Telescope: Celestron EdgeHD 8</span></div><div class="meta"><span>Camera: ZWO ASI462MC</span></div>
@@ -641,6 +647,13 @@ footer .wrap{flex-direction:column;justify-content:center;text-align:center}
     <span>Everyone here is an astronomer</span><span>Newest-first, filtered by you</span><span>Gear on every photo</span><span>Dark styling for night vision</span>
   </div>
 </div>
+
+<section class="advert" id="advert">
+  <div class="wrap">
+    <div class="label">See it in 30 seconds</div>
+    <div class="vidframe"><video src="img/astrosphere-advert.mp4" poster="img/advert-poster.jpg" controls muted playsinline loop preload="metadata" aria-label="AstroSphere video advert: a tour of the Sky Feed, posting with gear tags, comments and Squads"></video></div>
+  </div>
+</section>
 
 <section class="story" id="story">
   <div class="wrap">
@@ -701,7 +714,7 @@ footer .wrap{flex-direction:column;justify-content:center;text-align:center}
 <div class="who"><img class="pav2" src="img/app/av_galaxy.webp" alt=""><b>DobsonianDan</b><i class="mi kb" aria-hidden="true">more_vert</i></div>
 <div class="ptxt">Saturn from the back garden last night. First time I have caught the Cassini division this cleanly with the 10&quot; Dob.</div>
 <div class="meta"><span>Category: Planetary</span><span class="rt"><span>3 hours ago</span></span></div><div class="meta"><span>Telescope: Sky-Watcher Skyliner 250PX</span></div><div class="meta"><span>Camera: ZWO ASI224MC</span></div>
-<div class="acts"><span><i class="mi " aria-hidden="true">chat_bubble_outline</i>Comments 23</span><span class="lk"><i class="mi " aria-hidden="true">favorite</i>128</span></div></div><div class="card"><div class="car"><div class="pimg"><img src="img/app/p_jupiter.webp" alt=""></div></div>
+<div class="acts"><span><i class="mi " aria-hidden="true">chat_bubble_outline</i>Comments 23</span><span class="lk"><i class="mi " aria-hidden="true">favorite</i>128</span></div></div><div class="card"><div class="car"><div class="pimg"><img src="img/app/p_jupiter.webp" alt=""></div><div class="pimg peek"><img src="img/app/p_jupiter2.webp" alt=""></div></div>
 <div class="who"><img class="pav2" src="img/app/av_jupiter.webp" alt=""><b>JupiterJakob</b><i class="mi kb" aria-hidden="true">more_vert</i></div>
 <div class="ptxt">Great Red Spot rotating into view. 3,000 frame stack, best 15%.</div>
 <div class="meta"><span>Category: Planetary</span><span class="rt"><span>1 day ago</span></span></div><div class="meta"><span>Telescope: Celestron EdgeHD 8</span></div><div class="meta"><span>Camera: ZWO ASI462MC</span></div>
