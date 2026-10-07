@@ -638,6 +638,21 @@ footer .wrap{flex-direction:column;justify-content:center;text-align:center}
 .app .dn{color:#ef4444}
 .app .ac{color:#22c55e}
 .app .role{color:#55e8df;font-weight:600}
+
+.f5badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;border:1px solid rgba(250,204,21,.45);background:rgba(250,204,21,.08);color:#fde68a;font:500 15px var(--sans);letter-spacing:.01em}
+.f5badge .n{font-family:var(--mono);color:#fef3c7}
+.f5home{border-top:1px solid var(--line);padding-block:100px;background:radial-gradient(60% 70% at 50% 0%,rgba(139,92,246,.16),transparent 70%)}
+.f5home .inner{display:flex;gap:56px;align-items:center;justify-content:center;flex-wrap:wrap}
+.f5home .txt{flex:1 1 420px;max-width:560px;text-align:center}
+.f5home h2{font-size:clamp(32px,4.6vw,50px);line-height:1.08;margin:18px 0 0}
+.f5home p{color:var(--muted);font-size:18px;margin:18px auto 0;max-width:52ch}
+.f5home ul{list-style:none;padding:0;margin:26px auto 0;display:grid;gap:10px;max-width:440px;text-align:left}
+.f5home li{display:flex;gap:10px;color:#d6d8de}
+.f5home li:before{content:"★";color:#facc15}
+.f5home .ctas{justify-content:center}
+.f5home .shots{flex:0 1 330px;display:flex;justify-content:center}
+.f5home .shots img{width:min(290px,100%);height:auto}
+.f5home .f5count{font-size:14px;margin-top:16px;color:var(--faint);font-size:14px}
 </style>
 </head>
 <body>
@@ -1009,6 +1024,24 @@ footer .wrap{flex-direction:column;justify-content:center;text-align:center}
   </div>
 </section>
 
+<section class="f5home" id="founding">
+  <div class="wrap inner">
+    <div class="txt">
+      <div class="label">Now recruiting</div>
+      <h2>Become one of the <span class="grad">Founding 500.</span></h2>
+      <p>We’re looking for the first 500 space lovers to build the AstroSphere community with us. You don’t need to be an expert. Beginners are just as welcome.</p>
+      <ul>
+        <li>A permanent Founding Member badge on your profile, numbered #001 to #500</li>
+        <li>AstroSphere Tools free for life</li>
+        <li>Early access to new features and a real say in what we build next</li>
+      </ul>
+      <div class="ctas"><a class="btn solid" href="founding.html">Find out more</a><a class="btn" href="mailto:support@astro-sphere.co.uk?subject=Founding%20500%20application&body=Hi%20AstroSphere%2C%0A%0AI%27d%20like%20to%20apply%20to%20be%20one%20of%20the%20Founding%20500.%0A%0AName%3A%0AAstroSphere%20username%20%28if%20you%20have%20one%29%3A%0AWhere%20I%27m%20based%3A%0AMy%20astronomy%20%28beginner%2C%20visual%2C%20astrophotography%2C%20spaceflight...%29%3A%0AAstronomy%20club%20or%20society%20%28if%20any%29%3A%0A%0AThanks%21">Apply by email</a></div>
+      <p class="f5count">Only 500 places. When they’re gone, the programme closes for good.</p>
+    </div>
+    <div class="shots"><img class="realshot" src="img/v2-squad-page.webp" alt="An AstroSphere Squad page for a beginners’ astronomy group" width="425" height="862" loading="lazy"></div>
+  </div>
+</section>
+
 <section class="invite" id="download">
   <div class="wrap">
     <img src="img/icon.webp" alt="AstroSphere app icon" width="112" height="112">
@@ -1042,7 +1075,7 @@ footer .wrap{flex-direction:column;justify-content:center;text-align:center}
 <footer>
   <div class="wrap">
     <span>© 2026 AstroSphere · App screens show example users and images.</span>
-    <nav aria-label="Footer"><a href="tools.html">Tools</a><a href="#support">Support</a><a href="privacy.html">Privacy Policy</a><a href="credits.html">Image credits</a></nav>
+    <nav aria-label="Footer"><a href="tools.html">Tools</a><a href="#support">Support</a><a href="privacy.html">Privacy Policy</a><a href="founding.html">Founding 500</a><a href="credits.html">Image credits</a></nav>
   </div>
 </footer>
 </div>
