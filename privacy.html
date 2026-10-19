@@ -55,7 +55,7 @@ footer a{color:var(--muted);text-decoration:none}
 <main><div class="wrap">
   <div class="label">Legal</div>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 18 October 2026</p>
+  <p class="updated">Last updated 19 October 2026</p>
 
   <div class="summary">
     <b>The short version</b>
@@ -82,9 +82,9 @@ footer a{color:var(--muted);text-decoration:none}
       <tr><td><b>Equipment and observing</b></td><td>Your equipment, saved setups and Messier observing log (private to you), and any catalogue suggestions you send us</td><td>To run the tools and your gear tags</td></tr>
       <tr><td><b>Connections and Squads</b></td><td>Crewmates and crewmate requests, who you follow and who follows you, Squads you own, join or ask to join (name, description, picture, owner, moderators, members, join requests), and people you’ve blocked</td><td>To build your feed and run Squads</td></tr>
       <tr><td><b>Safety</b></td><td>Reports you make and reports about your content (who reported, what and whose content, the reason and details, a copy of the reported text or image link, and the review outcome), blocks and moderation decisions</td><td>To keep AstroSphere safe and deal with abuse</td></tr>
-      <tr><td><b>Location (optional)</b></td><td>Only if you tap “Use my current location”: your phone’s location (precise or approximate, your choice in iOS). The coordinates and place name are saved <b>only on your device</b>, never on our servers. To show a place name, your phone’s built-in map service (Apple on iPhone, Google on Android) receives the coordinates. You can type a location instead.</td><td>To calculate what’s in your sky</td></tr>
+      <tr><td><b>Location (optional)</b></td><td>Only if you tap “Use my current location”: your phone’s location (precise or approximate, your choice in iOS). The coordinates and place name are saved <b>only on your device</b>, never on our servers. The one exception is <b>Sky Forecast</b>: to fetch your forecast, the app sends an approximate location, rounded to about 5 km, to our server, which passes it to Open-Meteo. Forecasts for each rounded location are kept for up to an hour so nearby members share them; they aren’t linked to you. To show a place name, your phone’s built-in map service (Apple on iPhone, Google on Android) receives the coordinates. You can type a location instead.</td><td>To calculate what’s in your sky</td></tr>
       <tr><td><b>Notifications</b></td><td>Your in-app notifications (who, to whom, type, the linked post, comment or Squad, time and read status) and your notification settings. AstroSphere doesn’t send push notifications at present, so we don’t collect a device token.</td><td>To show you activity that involves you</td></tr>
-      <tr><td><b>Subscription</b></td><td>There are no in-app purchases yet. When the AstroSphere Tools subscription is added, payments will be handled entirely by Apple and we’ll never see your card details.</td><td>To unlock the Tools section</td></tr>
+      <tr><td><b>Subscription</b></td><td>If you subscribe to AstroSphere Tools, Apple (App Store) or Google (Google Play) takes the payment and we never see your card details. Our subscription service, RevenueCat, receives your AstroSphere user ID and your purchase history from the store (which plan, when it started and renews, trials, cancellations and refunds), and records any free access we give you, such as Founding 500 lifetime access.</td><td>To unlock the tools you’ve paid for, restore purchases on a new phone, and give free access</td></tr>
       <tr><td><b>On your device only</b></td><td>Your saved location, tool settings, filters, display preferences, content you’ve reported (kept hidden for you), and caches such as an offline copy of data, images and the photo of the Sun. These stay on your phone and are removed when you delete the app.</td><td>To make the app quick and work offline</td></tr>
     </tbody>
   </table></div>
@@ -123,6 +123,8 @@ footer a{color:var(--muted);text-decoration:none}
   <ul>
     <li><b>Google Firebase (Google LLC / Google Ireland Ltd):</b> sign-in (Authentication), database (Firestore), file storage and server functions. The database is hosted in London, UK. Some server functions, such as checking a username is free, deleting a Squad and account clean-up, run in the United States.</li>
     <li><b>Google Sign-In and Sign in with Apple:</b> optional ways to sign in. If you use them, Google or Apple shares your name and email with us.</li>
+    <li><b>Open-Meteo (Switzerland):</b> weather data for Sky Forecast. It receives only an approximate location (rounded to about 5 km) from our server, never your name or account details.</li>
+    <li><b>RevenueCat (RevenueCat, Inc., USA):</b> manages AstroSphere Tools subscriptions and free access. It receives your AstroSphere user ID and purchase history, never your name, email or card details.</li>
     <li><b>Google Maps:</b> maps of launch pads on the Launches pages. These maps never show your position. Tapping a map link opens Apple Maps or Google Maps.</li>
     <li><b>Apple and Google built-in place lookup:</b> your phone’s own map service turns your location into a place name, on your device.</li>
     <li><b>YouTube:</b> some NASA Pictures of the Day are videos (their thumbnails come from YouTube). If you tap play, the video runs in the YouTube player and YouTube/Google may collect data under Google’s privacy policy.</li>
@@ -139,7 +141,7 @@ footer a{color:var(--muted);text-decoration:none}
     <li>notifications to or from you, all your photos, gear, setups, Messier log and blocks</li>
     <li>your date of birth, your sign-in account and your profile</li>
   </ul>
-  <p>If you used Sign in with Apple, we revoke it. Squads you own pass to a moderator or member, or are deleted if you’re the only member. Other people’s reposts of your posts show “This post is no longer available”.</p>
+  <p>If you used Sign in with Apple, we revoke it. We also delete your record at RevenueCat. Deleting your account <b>doesn’t cancel</b> an App Store or Google Play subscription: cancel it in your store account settings first. Squads you own pass to a moderator or member, or are deleted if you’re the only member. Other people’s reposts of your posts show “This post is no longer available”.</p>
   <p>We don’t keep backups: deleted data is gone from our database within about an hour. We keep reports filed by or about you for up to 12 months after they’re resolved, for safety, and catalogue suggestions you sent are kept in anonymised form. Data saved on your phone stays there until you delete the app.</p>
   <p>If someone under 13 tries to sign up, the account is removed straight away and the date of birth isn’t kept.</p>
 
@@ -169,6 +171,6 @@ footer a{color:var(--muted);text-decoration:none}
   <p>If we make significant changes we’ll tell you in the app before they take effect. The date at the top shows when this policy was last updated.</p>
 </div></main>
 
-<footer><div class="wrap"><span>© 2026 AstroSphere</span><span style="display:flex;gap:20px"><a href="index.html#support">Support</a><a href="credits.html">Image credits</a></span></div></footer>
+<footer><div class="wrap"><span>© 2026 AstroSphere</span><span style="display:flex;flex-wrap:wrap;gap:12px 20px"><a href="index.html#support">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="guidelines.html">Community Guidelines</a><a href="credits.html">Image credits</a></span></div></footer>
 </body>
 </html>
