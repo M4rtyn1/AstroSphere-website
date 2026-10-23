@@ -55,7 +55,7 @@ footer a{color:var(--muted);text-decoration:none}
 <main><div class="wrap">
   <div class="label">Legal</div>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 20 October 2026</p>
+  <p class="updated">Last updated 23 October 2026</p>
 
   <div class="summary">
     <b>The short version</b>
@@ -75,15 +75,15 @@ footer a{color:var(--muted);text-decoration:none}
   <div class="table"><table>
     <thead><tr><th>Data</th><th>Examples</th><th>Why we need it</th></tr></thead>
     <tbody>
-      <tr><td><b>Account</b></td><td>Email, full name and username. Your password is handled by our sign-in provider (Firebase Authentication) and we never see it. If you use Google or Sign in with Apple, the name and email they share (Apple may give a private relay address).</td><td>To create and secure your account, and contact you about it</td></tr>
+      <tr><td><b>Account</b></td><td>Email, full name, display name and your unique @username. Your password is handled by our sign-in provider (Firebase Authentication) and we never see it. If you use Google or Sign in with Apple, the name and email they share (Apple may give a private relay address).</td><td>To create and secure your account, and contact you about it</td></tr>
       <tr><td><b>Date of birth</b></td><td>Asked at sign-up (and once for existing accounts). Stored in a private area that only you can read and never shown to anyone. Your profile only holds an “age verified” flag.</td><td>To confirm you’re 13 or over (legal age requirement)</td></tr>
       <tr><td><b>Profile</b></td><td>Display name, profile photo, bio, wallpaper and gallery images, country (taken from your phone’s region setting, which you can change), private/public setting</td><td>To show your profile to other members</td></tr>
-      <tr><td><b>Content you post</b></td><td>Photos (taken with your camera or chosen from your library, only the ones you pick), captions, categories, comments, replies, likes, reposts, tagged equipment and launch links</td><td>To publish your posts and conversations</td></tr>
+      <tr><td><b>Content you post</b></td><td>Photos (taken with your camera or chosen from your library, only the ones you pick), captions, categories, comments, replies, likes, reposts, tagged equipment, launch links and @mentions of other members</td><td>To publish your posts and conversations</td></tr>
       <tr><td><b>Equipment and observing</b></td><td>Your equipment and saved setups (other members can see them, as described below), your Messier observing log (private to you), and any catalogue suggestions you send us</td><td>To run the tools and your gear tags</td></tr>
       <tr><td><b>Connections and Squads</b></td><td>Crewmates and crewmate requests, who you follow and who follows you, Squads you own, join or ask to join (name, description, picture, owner, moderators, members, join requests), and people you’ve blocked</td><td>To build your feed and run Squads</td></tr>
       <tr><td><b>Safety</b></td><td>Reports you make and reports about your content (who reported, what and whose content, the reason and details, a copy of the reported text or image link, and the review outcome), blocks and moderation decisions</td><td>To keep AstroSphere safe and deal with abuse</td></tr>
       <tr><td><b>Location (optional)</b></td><td>Only if you tap “Use my current location”: your phone’s location (precise or approximate, your choice in iOS). The coordinates and place name are saved <b>only on your device</b>, never on our servers. The one exception is <b>Sky Forecast</b>: to fetch your forecast, the app sends an approximate location, rounded to about 5 km, to our server, which passes it to Open-Meteo. Forecasts for each rounded location are kept for up to an hour so nearby members share them; they aren’t linked to you. To show a place name, your phone’s built-in map service (Apple on iPhone, Google on Android) receives the coordinates. You can type a location instead.</td><td>To calculate what’s in your sky</td></tr>
-      <tr><td><b>Notifications</b></td><td>Your in-app notifications (who, to whom, type, the linked post, comment or Squad, time and read status) and your notification settings. AstroSphere doesn’t send push notifications at present, so we don’t collect a device token.</td><td>To show you activity that involves you</td></tr>
+      <tr><td><b>Notifications</b></td><td>Your in-app notifications (who, to whom, type, the linked post, comment or Squad, time and read status) and your notification settings. If you turn on push notifications: a push token for each phone you’re signed in on, which lets us deliver notifications to that phone (it’s deleted when you sign out or delete your account). If you ask to be reminded about a launch: which launch, whether you want the reminder 1 hour or 30 minutes before, and your phone’s time zone.</td><td>To show you activity that involves you, and to send the push notifications and launch reminders you ask for</td></tr>
       <tr><td><b>Subscription</b></td><td>If you subscribe to AstroSphere Tools, Apple (App Store) or Google (Google Play) takes the payment and we never see your card details. Our subscription service, RevenueCat, receives your AstroSphere user ID and your purchase history from the store (which plan, when it started and renews, trials, cancellations and refunds), and records any free access we give you, such as Founding 500 lifetime access.</td><td>To unlock the tools you’ve paid for, restore purchases on a new phone, and give free access</td></tr>
       <tr><td><b>On your device only</b></td><td>Your saved location, tool settings, filters, display preferences, content you’ve reported (kept hidden for you), and caches such as an offline copy of data, images and the photo of the Sun. These stay on your phone and are removed when you delete the app.</td><td>To make the app quick and work offline</td></tr>
     </tbody>
@@ -96,16 +96,18 @@ footer a{color:var(--muted);text-decoration:none}
     <li><b>Location:</b> “While Using the App” only. iOS shows standard wording about “Always”, but AstroSphere never asks for it.</li>
     <li><b>Camera:</b> when you choose Take photo.</li>
     <li><b>Photos:</b> when you choose Choose from library.</li>
+    <li><b>Notifications:</b> only after you tap Turn on in AstroSphere’s own “Stay in the loop” message (or later in Notification settings). You can choose which types reach you, or turn them off completely.</li>
   </ul>
-  <p>AstroSphere never asks for permission to send notifications or to track you. You can change any permission at any time in <b>iPhone Settings → AstroSphere</b>.</p>
+  <p>AstroSphere never asks for permission to track you. You can change any permission at any time in <b>iPhone Settings → AstroSphere</b>.</p>
 
   <h2>Who can see your information</h2>
   <ul>
     <li><b>Public accounts:</b> your profile, posts, equipment, saved setups and connections are visible to signed-in AstroSphere members, except anyone you have blocked.</li>
     <li><b>Private accounts:</b> only people you approve can see your posts, equipment and saved setups. Your display name and profile photo stay visible so people can find you.</li>
-    <li><b>Squads:</b> posts in a Squad are visible only to its members. Squad owners and moderators can see who has asked to join.</li>
+    <li><b>Squads:</b> posts in a <b>private</b> Squad are visible only to its members. Posts in a <b>public</b> Squad are visible to all signed-in members and can appear in the main Sky Feed. A Squad’s owner chooses which it is, and posts made while a Squad was private stay members-only if it later goes public. Squad owners and moderators can see who has asked to join.</li>
     <li><b>Reposts:</b> members can repost <b>public</b> posts with their own comment, and your original then appears inside their post. Posts from private accounts can’t be reposted, and Squad posts can only be reposted inside the same Squad. If you delete your post, reposts show “This post is no longer available”.</li>
     <li><b>Photo links:</b> photos are stored at long, unguessable web links. Anyone who has the exact link can open the photo, but the links aren’t listed or searchable.</li>
+    <li><b>@usernames and mentions:</b> your @username is shown on your profile and can be searched by signed-in members. If someone mentions you with your @username, you’re notified only if you can see that post or comment.</li>
     <li><b>Never shown to other members:</b> your email, your date of birth and your phone’s location. (The place you choose to put on your profile is shown.)</li>
   </ul>
 
@@ -121,7 +123,8 @@ footer a{color:var(--muted);text-decoration:none}
   <h2>Services we use</h2>
   <p>These providers process data for us, only on our instructions:</p>
   <ul>
-    <li><b>Google Firebase (Google LLC / Google Ireland Ltd):</b> sign-in (Authentication), database (Firestore), file storage and server functions. The database is hosted in London, UK. Some server functions, such as checking a username is free, deleting a Squad and account clean-up, run in the United States.</li>
+    <li><b>Google Firebase (Google LLC / Google Ireland Ltd):</b> sign-in (Authentication), database (Firestore), file storage and server functions. The database is hosted in London, UK. Some server functions, such as deleting a Squad and account clean-up, run in the United States; push notifications and launch reminders are sent from London.</li>
+    <li><b>Firebase Cloud Messaging (Google) and Apple Push Notification service (Apple):</b> deliver push notifications, if you turn them on. They receive your phone’s push token and the notification itself (for example a member’s display name and “liked your post”, or a launch name and countdown), never your email or date of birth.</li>
     <li><b>Google Sign-In and Sign in with Apple:</b> optional ways to sign in. If you use them, Google or Apple shares your name and email with us.</li>
     <li><b>Open-Meteo (Switzerland):</b> weather data for Sky Forecast. It receives only an approximate location (rounded to about 5 km) from our server, never your name or account details.</li>
     <li><b>RevenueCat (RevenueCat, Inc., USA):</b> manages AstroSphere Tools subscriptions and free access. It receives your AstroSphere user ID and purchase history, never your name, email or card details.</li>
@@ -139,7 +142,8 @@ footer a{color:var(--muted);text-decoration:none}
     <li>your posts and reposts, with their comments, photos and notifications</li>
     <li>your comments (a comment with replies becomes “This comment was deleted”, with no author), likes, follows, crewmates and requests</li>
     <li>notifications to or from you, all your photos, gear, setups, Messier log and blocks</li>
-    <li>your date of birth, your sign-in account and your profile</li>
+    <li>your date of birth, your sign-in account and your profile, including your @username (which then becomes free for someone else)</li>
+    <li>your push tokens and launch reminders</li>
   </ul>
   <p>If you used Sign in with Apple, we revoke it. We also delete your record at RevenueCat. Deleting your account <b>doesn’t cancel</b> an App Store or Google Play subscription: cancel it in your store account settings first. Squads you own pass to a moderator or member, or are deleted if you’re the only member. Other people’s reposts of your posts show “This post is no longer available”.</p>
   <p>We don’t keep backups: deleted data is gone from our database within about an hour. We keep reports filed by or about you for up to 12 months after they’re resolved, for safety, and catalogue suggestions you sent are kept in anonymised form. Data saved on your phone stays there until you delete the app.</p>
