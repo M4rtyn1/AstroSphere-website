@@ -55,7 +55,7 @@ footer a{color:var(--muted);text-decoration:none}
 <main><div class="wrap">
   <div class="label">Legal</div>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 23 October 2026</p>
+  <p class="updated">Last updated 25 October 2026</p>
 
   <div class="summary">
     <b>The short version</b>
@@ -63,7 +63,7 @@ footer a{color:var(--muted);text-decoration:none}
       <li>We collect only what’s needed to run your account, your posts and the tools.</li>
       <li>No adverts, no selling or renting your data, and no tracking across other apps.</li>
       <li>Location, camera and photos are only used when you choose to use those features.</li>
-      <li>You can make your account private, choose your notifications, and delete your account from the app at any time.</li>
+      <li>You can make your account private, choose your notifications, turn crash reports off, and delete your account from the app at any time.</li>
     </ul>
   </div>
 
@@ -86,9 +86,10 @@ footer a{color:var(--muted);text-decoration:none}
       <tr><td><b>Notifications</b></td><td>Your in-app notifications (who, to whom, type, the linked post, comment or Squad, time and read status) and your notification settings. If you turn on push notifications: a push token for each phone you’re signed in on, which lets us deliver notifications to that phone (it’s deleted when you sign out or delete your account). If you ask to be reminded about a launch: which launch, whether you want the reminder 1 hour or 30 minutes before, and your phone’s time zone.</td><td>To show you activity that involves you, and to send the push notifications and launch reminders you ask for</td></tr>
       <tr><td><b>Subscription</b></td><td>If you subscribe to AstroSphere Tools, Apple (App Store) or Google (Google Play) takes the payment and we never see your card details. Our subscription service, RevenueCat, receives your AstroSphere user ID and your purchase history from the store (which plan, when it started and renews, trials, cancellations and refunds), and records any free access we give you, such as Founding 500 lifetime access.</td><td>To unlock the tools you’ve paid for, restore purchases on a new phone, and give free access</td></tr>
       <tr><td><b>On your device only</b></td><td>Your saved location, tool settings, filters, display preferences, content you’ve reported (kept hidden for you), and caches such as an offline copy of data, images and the photo of the Sun. These stay on your phone and are removed when you delete the app.</td><td>To make the app quick and work offline</td></tr>
+      <tr><td><b>Crash reports</b></td><td>If the app crashes or hits an error, a crash report: what went wrong in the app’s code, the time, the app version, your phone model and iOS version, free memory and storage, and a random installation ID. Reports are not linked to your account: we don’t attach your name, email, username or user ID, and we remove email addresses, IDs and text you’ve written from error messages before they’re sent. You can turn this off in Settings (“Send crash reports”).</td><td>To find and fix bugs and crashes</td></tr>
     </tbody>
   </table></div>
-  <p>We don’t collect your contacts, your browsing outside the app, advertising identifiers, analytics or crash reports, and we don’t track you across other companies’ apps or websites.</p>
+  <p>We don’t collect your contacts, your browsing outside the app, advertising identifiers or analytics, and we don’t track you across other companies’ apps or websites.</p>
 
   <h2>Phone permissions</h2>
   <p>AstroSphere asks for each permission only when you use the feature that needs it:</p>
@@ -103,7 +104,7 @@ footer a{color:var(--muted);text-decoration:none}
   <h2>Who can see your information</h2>
   <ul>
     <li><b>Public accounts:</b> your profile, posts, equipment, saved setups and connections are visible to signed-in AstroSphere members, except anyone you have blocked.</li>
-    <li><b>Private accounts:</b> only people you approve can see your posts, equipment and saved setups. Your display name and profile photo stay visible so people can find you.</li>
+    <li><b>Private accounts:</b> only people you approve (your crewmates) can see your posts, equipment and saved setups. Posts you make in a <b>public</b> Squad are the exception: everyone who can see that Squad can see them, and the app tells you this before you post. Your display name and profile photo stay visible so people can find you.</li>
     <li><b>Squads:</b> posts in a <b>private</b> Squad are visible only to its members. Posts in a <b>public</b> Squad are visible to all signed-in members and can appear in the main Sky Feed. A Squad’s owner chooses which it is, and posts made while a Squad was private stay members-only if it later goes public. Squad owners and moderators can see who has asked to join.</li>
     <li><b>Reposts:</b> members can repost <b>public</b> posts with their own comment, and your original then appears inside their post. Posts from private accounts can’t be reposted, and Squad posts can only be reposted inside the same Squad. If you delete your post, reposts show “This post is no longer available”.</li>
     <li><b>Photo links:</b> photos are stored at long, unguessable web links. Anyone who has the exact link can open the photo, but the links aren’t listed or searchable.</li>
@@ -124,6 +125,7 @@ footer a{color:var(--muted);text-decoration:none}
   <p>These providers process data for us, only on our instructions:</p>
   <ul>
     <li><b>Google Firebase (Google LLC / Google Ireland Ltd):</b> sign-in (Authentication), database (Firestore), file storage and server functions. The database is hosted in London, UK. Some server functions, such as deleting a Squad and account clean-up, run in the United States; push notifications and launch reminders are sent from London.</li>
+    <li><b>Firebase Crashlytics (Google):</b> receives crash reports, as described above, unless you turn them off. Google keeps crash reports for 90 days.</li>
     <li><b>Firebase Cloud Messaging (Google) and Apple Push Notification service (Apple):</b> deliver push notifications, if you turn them on. They receive your phone’s push token and the notification itself (for example a member’s display name and “liked your post”, or a launch name and countdown), never your email or date of birth.</li>
     <li><b>Google Sign-In and Sign in with Apple:</b> optional ways to sign in. If you use them, Google or Apple shares your name and email with us.</li>
     <li><b>Open-Meteo (Switzerland):</b> weather data for Sky Forecast. It receives only an approximate location (rounded to about 5 km) from our server, never your name or account details.</li>
@@ -146,7 +148,7 @@ footer a{color:var(--muted);text-decoration:none}
     <li>your push tokens and launch reminders</li>
   </ul>
   <p>If you used Sign in with Apple, we revoke it. We also delete your record at RevenueCat. Deleting your account <b>doesn’t cancel</b> an App Store or Google Play subscription: cancel it in your store account settings first. Squads you own pass to a moderator or member, or are deleted if you’re the only member. Other people’s reposts of your posts show “This post is no longer available”.</p>
-  <p>We don’t keep backups: deleted data is gone from our database within about an hour. We keep reports filed by or about you for up to 12 months after they’re resolved, for safety, and catalogue suggestions you sent are kept in anonymised form. Data saved on your phone stays there until you delete the app.</p>
+  <p>Crash reports are deleted automatically after 90 days. We don’t keep backups: deleted data is gone from our database within about an hour. We keep reports filed by or about you for up to 12 months after they’re resolved, for safety, and catalogue suggestions you sent are kept in anonymised form. Data saved on your phone stays there until you delete the app.</p>
   <p>If someone under 13 tries to sign up, the account is removed straight away and the date of birth isn’t kept.</p>
 
   <h2>Your rights</h2>
