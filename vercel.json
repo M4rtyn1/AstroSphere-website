@@ -1,3 +1,7 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/founding", "destination": "/", "permanent": false },
+    { "source": "/founding.html", "destination": "/", "permanent": false }
+  ]
 }
